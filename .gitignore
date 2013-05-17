@@ -1,2 +1,2 @@
 # Ignore the Android binary files
-# ZeroMQTest/bin/*
+ZeroMQTest/bin/*
