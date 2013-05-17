@@ -1,0 +1,2 @@
+# Ignore the Android binary files
+./ZeroMQTest/bin/*
