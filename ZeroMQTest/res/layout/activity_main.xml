@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framework"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/framework"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/hello_world" />
+    
+    <EditText
+        android:id="@+id/urlInput"
+        android:inputType="textUri"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTextView"
+        android:layout_alignLeft="@id/framework"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" 
+        android:text="@string/default_url"/>
+    
+    <EditText 
+        android:id="@+id/portInput"
+        android:inputType="numberDecimal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@id/urlInput"
+        android:layout_alignLeft="@id/framework"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/default_port"/>
+   
+   	<Button 
+       android:id="@+id/startSubService"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/portInput"
+       android:layout_alignLeft="@+id/framework"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp"
+       android:text="@string/start_sub_service"/>
+   
+    <Button 
+       android:id="@+id/stopSubService"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/startSubService"
+       android:layout_alignLeft="@+id/framework"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp"
+       android:text="@string/stop_sub_service"/>
+   
+    
+</RelativeLayout>
